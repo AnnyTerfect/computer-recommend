@@ -1,0 +1,299 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+html,body
+{
+    overflow:hidden;
+}
+#pagecont
+{
+    position: relative;
+    height:100%;
+    background: #000;
+    overflow: hidden;
+}
+.start
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:90%;
+    text-align: center;
+    color:#FFF;
+    transform:translate(-50%,-50%);
+    font-family: sans-serif;
+}
+@media screen and (max-width: 360px)
+{
+    #start
+    {
+        font-size:35px;
+    }
+    .start
+    {
+        font-size: 25px;
+    }
+    .arrow
+    {
+        width:20px;
+        height:30px;
+    }
+}
+@media screen and (min-width:361px) and (max-width: 600px)
+{
+    #start
+    {
+        font-size:40px;
+    }
+    .start
+    {
+        font-size: 30px;
+    }
+    .arrow
+    {
+        width:25px;
+        height:35px;
+    }
+}
+@media screen and (min-width:601px) and (max-width: 900px)
+{
+    #start
+    {
+        font-size:45px;
+    }
+    .start
+    {   
+        font-size: 35px;
+    }
+    .arrow
+    {
+        width:30px;
+        height:40px;
+    }
+
+}
+@media screen and (min-width:901px) and (max-width: 1200px)
+{
+    #start
+    {
+        font-size:50px;
+    }
+    .start
+    {
+        font-size: 40px;
+    }
+    .arrow
+    {
+        width:33px;
+        height:43px;
+    }
+
+}
+@media screen and (min-width:1201px) and (max-width: 1500px)
+{
+    #start
+    {
+        font-size:55px;
+    }
+    .start
+    {
+        font-size: 45px;
+    }
+    .arrow
+    {
+        width:35px;
+        height:45px;
+    }
+
+}
+@media screen and (min-width:1501px)
+{
+    #start
+    {
+        font-size:60px;
+    }
+    .start
+    {
+        font-size: 50px;
+    }
+    .arrow
+    {
+        width:40px;
+        height:50px;
+    }
+
+}
+.tip
+{
+    position: absolute;
+    z-index: 100;
+    left:50%;
+    bottom:0;
+    text-align: center;
+    color:#FFF;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+}
+.arrow
+{
+    background:url(../img/xia.png) no-repeat;
+    background-size: 100% 100%;
+}
+.page
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:none;
+}
+#startpage1
+{
+    background:#051933;
+}
+#startpage2
+{
+    background:#B0D6AF;
+}
+#startpage3
+{
+    background:#DCD5A7;
+}
+#startpage4
+{
+    background:#D6867D;
+}
+#startpage5
+{
+    background:#DEE0BB;
+}
+#startpage6
+{
+    background:#6A5A4D;
+}
+#startpage7
+{
+    background:#AD0238;
+}
+#page1
+{
+    background:#9C8179;
+}
+#page2
+{
+    background: #D6A8E0;
+}
+#page3
+{
+    background: #EABF7f;
+}
+#page4
+{
+    background: #A69EDE;
+}
+#page5
+{
+    background: #464F63;
+}
+#page6
+{
+    background: #0D265C;
+}
+#page7
+{
+    background: #70185C;
+}
+#page8
+{
+    background: #457018;
+}
+#page9
+{
+    background: #704418;
+}
+#page10
+{
+    background: #8C2078;
+}
+#page11
+{
+    background: #B886B8;
+}
+#page12
+{
+    background: #3E82D3;
+}
+#resultpage
+{
+    background: #000;
+}
+#sharepage
+{
+    color:#000;
+}
+.ques-cont
+{
+    position:absolute;
+    left:50%;
+    top:45%;
+    width:80%;
+    max-width:600px;
+    transform: translate(-50%,-50%);
+    overflow-wrap: break-word;
+    color:#FFF;
+}
+.question
+{
+    font-size:25px;
+}
+.resu-cont
+{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:80%;
+    max-width:600px;
+    transform: translate(-50%,-50%);
+    overflow-wrap: break-word;
+    font-size:25px;
+    color:#FFF;
+}
+.answer,.result
+{
+    padding: 5px 0 5px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-size: 19px;
+    border: solid 2px #FFF;
+}
+.answer:hover
+{
+    background: #FFF;
+    color:#000;
+}
+#resultpage .question
+{
+    transform:translateY(100%);
+    opacity: 0;
+    transition: 1s;
+}
+.result
+{
+    transform:translateY(100%);
+    opacity:0;
+    transition: 1s;
+}
+#sharetip
+{
+    bottom:auto;
+    left:auto;
+    top:0;
+    right:0;
+    transition:500ms;
+    transform:translate(-10px,10px);
+}
+.sharearrow
+{
+    transform:rotate(-135deg);
+}
